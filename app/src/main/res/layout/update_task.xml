@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nasolution.com.nasolution.AddTask">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/updateTaskLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_15sdp">
+
+            <Spinner
+                android:id="@+id/spinnerUpdateTaskCompanyList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <Spinner
+                android:id="@+id/spinnerUpdateTaskProjectList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:id="@+id/updateTaskFieldsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdateTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@color/btnColor"
+                android:text="Update Task"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

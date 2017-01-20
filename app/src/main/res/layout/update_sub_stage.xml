@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_sub_stage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nasolution.com.nasolution.UpdateSubStage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/updateSubStageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateSubStageCompanyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateSubStageProjectList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateSubStageStageList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateNoOfSubStage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint=" Update Number Of Sub-Stages"
+                    android:inputType="number"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdateProjectSubStage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="#cf3e3e"
+                android:text="Update Sub-Stage"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_11sdp" />
+
+            <Button
+                android:id="@+id/btnSubmitUpdateSubStage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="#cf3e3e"
+                android:text="Submit Sub-Stage"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

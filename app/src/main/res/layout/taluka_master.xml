@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/taluka_Maaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayoutForTaluka"
+        android:layout_marginTop="@dimen/_60sdp">
+
+        <Button
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:text="Add"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:textColor="@color/btnColor"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btnAddTaluka"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:id="@+id/talukaDivider1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_toRightOf="@+id/btnAddTaluka"
+            android:background="@color/divider">
+        </View>
+
+        <Button
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:text="Update"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textColor="@color/btnColor"
+            android:id="@+id/btnUpdateTaluka"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:id="@+id/talukaDivider2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/btnUpdateTaluka"
+            android:background="@color/divider">
+
+        </View>
+
+        <Button
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Delete"
+            android:textColor="@color/btnColor"
+            android:id="@+id/btnDeleteTaluka"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select State :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblSelectTalukaState"-->
+            <!--android:layout_weight="0.29" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint="New State Name"-->
+            <!--android:layout_toRightOf="@+id/lblSelectTalukaState"-->
+            <!--android:id="@+id/spinnerTalukaState"/>-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:hint="New State Name"
+            android:layout_toRightOf="@+id/lblSelectTalukaState"
+            android:id="@+id/spinnerTalukaState"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select District : "-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblSelectTalukaDistrict"-->
+            <!--android:layout_weight="0.23" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint="New State Name"-->
+            <!--android:layout_toRightOf="@+id/lblSelectTalukaDistrict"-->
+            <!--android:id="@+id/spinnerTalukaDistrict"/>-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:hint="New State Name"
+            android:layout_toRightOf="@+id/lblSelectTalukaDistrict"
+            android:id="@+id/spinnerTalukaDistrict"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/spinnerTalukaNameRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select Taluka :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblSelectTalukaName"-->
+            <!--android:layout_weight="0.26" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:layout_toRightOf="@+id/lblSelectTalukaName"-->
+            <!--android:id="@+id/spinnerTalukaName"/>-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/lblSelectTalukaName"
+            android:id="@+id/spinnerTalukaName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/addNewTalukaRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:id="@+id/lblAddTaluka"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.69"-->
+            <!--android:text="Taluka Name"-->
+            <!--android:textSize="@dimen/_15sdp" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint="New Taluka Name"-->
+            <!--android:layout_toRightOf="@+id/lblAddTaluka"-->
+            <!--android:id="@+id/edittxtAddTaluka"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="New Taluka Name"
+            android:layout_toRightOf="@+id/lblAddTaluka"
+            android:id="@+id/edittxtAddTaluka"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/updateTalukaRelativelayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Update Taluka"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblUpdateTaluka"-->
+            <!--android:layout_weight="0.42" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint="Taluka Name"-->
+            <!--android:layout_toRightOf="@+id/lblUpdateTaluka"-->
+            <!--android:id="@+id/edittxtUpdateTalukaName"/>-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="Taluka Name"
+            android:layout_toRightOf="@+id/lblUpdateTaluka"
+            android:id="@+id/edittxtUpdateTalukaName"/>
+    </LinearLayout>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Taluka"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:id="@+id/btnSubmitAddTaluka"
+        android:background="@color/btnColor"
+        android:textColor="#ffffff"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Taluka"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:id="@+id/btnSubmitUpdateTaluka"
+        android:background="@color/btnColor"
+        android:textColor="#ffffff"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Taluka"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:id="@+id/btnSubmitDeleteTaluka"
+        android:background="@color/btnColor"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nasolution.com.nasolution.StateMaster"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:id="@+id/relativeLayoutForState">
+
+        <Button
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:text="Add"
+            android:background="@null"
+            android:textColor="@color/btnColor"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btnAddState"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:id="@+id/stateDivider"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/btnAddState"
+            android:background="@color/divider"/>
+
+        <Button
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Update"
+            android:background="@null"
+            android:textColor="@color/btnColor"
+            android:id="@+id/btnUpdateState"/>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:id="@+id/stateDivider2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/btnUpdateState"
+            android:background="@color/divider"/>
+
+        <Button
+            android:id="@+id/btnDeleteState"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Delete"
+            android:textColor="@color/btnColor"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/spinnerStateLayouts"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select State :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblSelectState"-->
+            <!--android:layout_weight="0.42" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:layout_toRightOf="@+id/lblSelectState"-->
+            <!--android:id="@+id/spinnerShowStateName"/>-->
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/lblSelectState"
+            android:id="@+id/spinnerShowStateName"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/addNewStateRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select Name :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblAddState"-->
+            <!--android:layout_weight="0.29" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint="New State Name"-->
+            <!--android:layout_toRightOf="@+id/lblAddState"-->
+            <!--android:id="@+id/edittxtAddState"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint="New State Name"
+            android:layout_toRightOf="@+id/lblAddState"
+            android:id="@+id/edittxtAddState"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/updateStateRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Update State"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblUpdateState"-->
+            <!--android:layout_weight="0.23" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint=" State Name"-->
+            <!--android:layout_toRightOf="@+id/lblUpdateState"-->
+            <!--android:id="@+id/edittxtUpdateStateName"/>-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:hint=" State Name"
+            android:layout_toRightOf="@+id/lblUpdateState"
+            android:id="@+id/edittxtUpdateStateName"/>
+    </LinearLayout>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add State"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:id="@+id/btnSubmitAddState"
+        android:background="@color/btnColor"
+        android:textColor="#ffffff"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update State"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:id="@+id/btnSubmitUpdateState"
+        android:background="@color/btnColor"
+        android:textColor="#ffffff"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete State"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:id="@+id/btnSubmitDeleteState"
+        android:background="@color/btnColor"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>
+<!--
+
+<android.support.v7.widget.RecyclerView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/stateMasterRecyclerVew">
+</android.support.v7.widget.RecyclerView>
+-->

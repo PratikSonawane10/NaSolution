@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nasolution.com.nasolution.UpdateProject">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerUpdateProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:id="@+id/projectDetailsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.nasolution.com.nasolution.MultiSelectionSpinner.MultiSelectionSpinner
+                    android:id="@+id/spinnerUpdateEngineer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateServiceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateProjectDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUpdateProjectTaluka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateProjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Update Project Name"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateOldSurveyNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Update Old Survey Number"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateNewSurveyNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="New Survey Number"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateFileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="File Number"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateVillageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Village Name"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdateProjectArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Project Area"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/txtUpdatetProjectDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:id="@+id/btnSubmitUpdateProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/btnColor"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

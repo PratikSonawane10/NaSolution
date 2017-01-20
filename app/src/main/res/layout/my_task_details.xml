@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            card_view:cardCornerRadius="@dimen/_2sdp"
+            card_view:cardElevation="@dimen/_16sdp">
+
+            <RelativeLayout
+                android:id="@+id/mainRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/projectNameLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/projectNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39"
+                        android:text="Project Name :"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/projectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="Project XYZ"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/clientNameLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/projectNameLinearLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/clientNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39"
+                        android:text="Client Name :"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/clientName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="Mohan Group"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/titleLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clientNameLinearLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/titleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39"
+                        android:text="Title :"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="ABC"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/completionDateRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleLinearLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/completionDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Completion Date:"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/completionDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="05-Nov-2016"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/assignDateRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/completionDateRelativeLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/assignDLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Assign Date:"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/assignDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="05-Oct-2016"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stagePercentRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/assignDateRelativeLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/stagePercentLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Stage Percent :"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/stagePercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="25%"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/assignByRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stagePercentRelativeLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/assignByLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Assign By :"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/assignBy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:text="Admin"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/taskStatusLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/assignByRelativeLayout"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/taskStatusLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="Task Status"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgTaskStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rdbNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rdbinProcess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="In Process"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <RadioButton
+                            android:id="@+id/rdbComplete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Complete"
+                            android:textSize="@dimen/_16sdp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remarkkLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taskStatusLayout"
+                    android:padding="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.14"
+                        android:hint="Enter Remark Here..."
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/taskDetailsSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|left"
+        android:src="@drawable/plus"
+        app:backgroundTint="#03A9F4"
+        app:elevation="@dimen/_16sdp"
+        android:layout_margin="@dimen/_15sdp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right" />
+</RelativeLayout>
+

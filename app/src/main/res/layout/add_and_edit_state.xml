@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addnewstate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/allPadding">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/relativeLayoutForState"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lblsignin"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_centerHorizontal="true"
+            android:text="AddNew and Update State"
+            android:textColor="@color/btnColor"
+            android:id="@+id/lblAdd_EditState"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State Master Id : "
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textColor="@color/edittext"
+            android:id="@+id/lblStateMasterId"
+            android:layout_below="@+id/lblAdd_EditState"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:textColor="@color/edittext"
+            android:id="@+id/txtStateMasterID"
+            android:layout_toRightOf="@+id/lblStateMasterId"
+            android:layout_below="@+id/lblAdd_EditState"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State Name"
+            android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:textColor="@color/edittext"
+            android:id="@+id/lblStateName"
+            android:layout_below="@+id/lblStateMasterId"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:hint="Enter State Name"
+            android:id="@+id/edittxtStateName"
+            android:textSize="@dimen/_11sdp"
+            android:layout_toRightOf="@+id/lblStateName"
+            android:layout_below="@+id/lblStateMasterId"
+            android:textColor="@color/edittext"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btnSubmitState"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:textColor="@color/signInTextColor"
+            android:background="@color/btnColor"
+            android:textSize="@dimen/_11sdp"
+            android:layout_below="@+id/edittxtStateName"/>
+        </RelativeLayout>
+</RelativeLayout>

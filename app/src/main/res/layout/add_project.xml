@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_project_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nasolution.com.nasolution.AddProject">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtAddCommpanyNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="Add new company"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/txtOr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:hint="Or"
+                android:textAlignment="center"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <Spinner
+                android:id="@+id/spinnerSelectCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:id="@+id/lblArchitectforSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.nasolution.com.nasolution.MultiSelectionSpinner.MultiSelectionSpinner
+                    android:id="@+id/spinnerSelectEngineer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lblArchitectforSpinner"
+                    android:textSize="@dimen/_15sdp" />
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/spinnerServiceType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <Spinner
+                android:id="@+id/spinnerProjectState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <Spinner
+                android:id="@+id/spinnerProjectDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <Spinner
+                android:id="@+id/spinnerProjectTaluka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="Project Name"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtOldSurveyNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="Old Survey Number"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtNewSurveyNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="New Survey Number"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtFileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="File Number"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtVillageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="Village Name"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtProjectArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="Project Area"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/txtProjectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="Description"
+                android:inputType="text"
+                android:textColor="@color/edittext"
+                android:textSize="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/btnSubmitProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/btnColor"
+                android:text="Submit"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

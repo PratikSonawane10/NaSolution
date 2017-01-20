@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_1sdp"
+        card_view:cardElevation="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/projectProjectCodeLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectCodeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Project Code :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/ProjectCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectCodeLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="abc 123"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/projectTitleLinearLayout"
+                android:layout_below="@+id/projectProjectCodeLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectTitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Project Name :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectTitleLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Mohan Group"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/projectAreaLinearLayout"
+                android:layout_below="@+id/projectTitleLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectAreaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Project Area :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectAreaLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Ks Softech"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/projectfileNumberLinearLayout"
+                android:layout_below="@+id/projectAreaLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectfileNumberLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="File Number :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectfileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectfileNumberLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="F123"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/projectNewSurveyNoLinearLayout"
+                android:layout_below="@+id/projectfileNumberLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectNewSurveyNoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="New Survey No :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectNewSurveyNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectNewSurveyNoLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="N1243"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/projectoldSurveyNoLinearLayout"
+                android:layout_below="@+id/projectNewSurveyNoLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectoldSurveyNoLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Old Survey No :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectoldSurveyNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectoldSurveyNoLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="a123"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/projectVillageNameLinearLayout"
+                android:layout_below="@+id/projectoldSurveyNoLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectVillageNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Village Name :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectVillageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectVillageNameLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="XYZ"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/projectDescriptionLinearLayout"
+                android:layout_below="@+id/projectVillageNameLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:text="Description about Project"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

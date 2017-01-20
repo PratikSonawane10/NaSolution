@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/company_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollviewcompanyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/companyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblCompanyInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="Add Company Information"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittxtCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Company Name"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/edittxtCompanyEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/edittxtCompanyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerCompanyState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textInputLayoutAddress"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinnerCompanyDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerCompanyState"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/edittxtCompanyCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/edittxtCompanyLandmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Landmark"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <EditText
+                    android:id="@+id/edittxtCompanyPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:hint="Pincode"
+                    android:inputType="text"
+                    android:textColor="@color/edittext"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:id="@+id/btnSubmitCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnAddClientInfo"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/btnColor"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

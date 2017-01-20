@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_1sdp"
+        card_view:cardElevation="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/userempCodeLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/userempCodeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="User  empCode :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/userempCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userempCodeLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="abc@gmail.com"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userNameLinearLayout"
+                android:layout_below="@+id/userempCodeLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/userNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="User Name :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userNameLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Mohan Group"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userAddressLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userNameLinearLayout"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/userAddressLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="User Address :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/userAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userAddressLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="abd xyz pqr"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userEmailLinearLayout"
+                android:layout_below="@+id/userAddressLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/userEmailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="User Email :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userEmailLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="abc@gmail.com"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userMobileLinearLayout"
+                android:layout_below="@+id/userEmailLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/userMobileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="User Mobile :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/userMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userMobileLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="1234567890"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

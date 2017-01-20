@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\rushikesh\Android\NaSolution\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4408c74064efbc472100c250d5c4f4d5c9b34988">
+        <dex dex="D:\rushikesh\Android\NaSolution\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4a4389beba3ac66790b29d7412797bd4e40d5469\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\rushikesh\Android\NaSolution\app\libs\ksoap2-android-assembly-2.4-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="D:\rushikesh\Android\NaSolution\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-2.4-jar-with-dependencies_62d739e8e6e7aa1d1c1bf417482e284db8003263\classes.dex" />
+    </item>
+
+</items>

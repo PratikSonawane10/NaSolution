@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_1sdp"
+        card_view:cardElevation="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/clientNameLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/clientNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Client Name :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/clientName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/clientNameLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Mohan Group"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clientAddressLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clientNameLinearLayout"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/clientAddressLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Client Address :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/clientAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/clientAddressLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="abd xyz pqr"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/clientCityLinearLayout"
+                android:layout_below="@+id/clientAddressLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/clientCityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Client City :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/clientCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/clientCityLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Dombivli"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clientEmailLinearLayout"
+                android:layout_below="@+id/clientCityLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/clientEmailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Client Email :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/clientEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/clientEmailLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="abc@gmail.com"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

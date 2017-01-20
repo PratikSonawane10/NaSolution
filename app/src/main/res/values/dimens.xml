@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="allPadding">15dp</dimen>
+    <dimen name="lblsignin">20sp</dimen>
+    <dimen name="alertDialogListNames">17sp</dimen>
+    <dimen name="dialogeListMenuViewDialogDivider">0.5dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_size">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="allMargin">20sp</dimen>
+</resources>

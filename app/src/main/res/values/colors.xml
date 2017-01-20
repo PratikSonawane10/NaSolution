@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D32f2f</color>
+    <color name="colorPrimaryDark">#a7272a</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="btnColor">#CF3E3E</color>
+    <color name="signInTextColor">#ffffff</color>
+    <color name="edittext">#000000</color>
+    <color name="list_internal_divider">#44d3d3d4</color>
+    <color name="divider">#BDBDBD</color>
+    <color  name = "spinnerhinttext">#616161</color>
+    <color  name = "colorWhite">#ffffff</color>
+    <color name="menu_text_color">#000000</color>
+    <color name="header_text">#EBEEF0</color>
+</resources>

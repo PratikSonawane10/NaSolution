@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutForDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp">
+
+        <Button
+            android:id="@+id/btnAddDistrict"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="Add"
+            android:textColor="@color/btnColor"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:id="@+id/DistrictDivider1"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/btnAddDistrict"
+            android:background="@color/divider"/>
+
+        <Button
+            android:id="@+id/btnUpdateDistrict"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="Update"
+            android:textColor="@color/btnColor"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:id="@+id/DistrictDivider2"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/btnUpdateDistrict"
+            android:background="@color/divider"/>
+
+        <Button
+            android:id="@+id/btnDeleteDistrict"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="Delete"
+            android:textColor="@color/btnColor"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/addNewStateRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select State :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblSelectDistrictState"-->
+            <!--android:layout_weight="0.17" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:layout_toRightOf="@+id/lblSelectDistrictState"-->
+            <!--android:id="@+id/spinnerDistrictState"/>-->
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/spinnerDistrictState"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/spinnerDistrictNameRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Select District :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/txtSelectDistrictName"-->
+            <!--android:layout_weight="0.09" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:layout_toRightOf="@+id/txtSelectDistrictName"-->
+            <!--android:id="@+id/spinnerDistrictName"/>-->
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/spinnerDistrictName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/addNewDisttrictRelativeLayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="District Name :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblAddDistrict"-->
+            <!--android:layout_weight="0.17" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/edittxtAddDistrict"-->
+            <!--android:layout_width="295dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/lblAddDistrict"-->
+            <!--android:hint="New District Name"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:layout_weight="0.48" />-->
+
+        <EditText
+            android:id="@+id/edittxtAddDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New District Name"
+            android:textSize="@dimen/_15sdp"
+            android:layout_weight="0.48" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:id="@+id/updateDistrictRelativelayout"
+        android:weightSum="1">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Update District :"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:id="@+id/lblUpdateDistrict" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/_15sdp"-->
+            <!--android:hint="District Name"-->
+            <!--android:layout_toRightOf="@+id/lblUpdateDistrict"-->
+            <!--android:id="@+id/edittxtUpdateDistrictName"-->
+            <!--android:layout_weight="0.21" />-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:hint="District Name"
+            android:id="@+id/edittxtUpdateDistrictName"
+            android:layout_weight="0.21" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmitAddDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@color/btnColor"
+        android:text="Add District"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSubmitUpdateDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@color/btnColor"
+        android:text="Update District"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnSubmitDeleteDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@color/btnColor"
+        android:text="Delete District"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_1sdp"
+        card_view:cardElevation="@dimen/_15sdp">
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/dateRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4">
+
+                <TextView
+                    android:id="@+id/dateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Completion Date:"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_5sdp"
+                    android:text="05-Nov-2016"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/projectNameLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateRelativeLayout"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/projectNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Project Name :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/projectName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/projectNameLabel"
+                    android:layout_weight="1.14"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Project XYZ"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clientNameLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/projectNameLinearLayout"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/clientNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Client Name :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/clientName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/clientNameLabel"
+                    android:layout_weight="0.33"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Mohan Group"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/titleLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clientNameLinearLayout"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/titleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.39"
+                    android:text="Title :"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/titleLabel"
+                    android:layout_weight="1.14"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="ABC"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
